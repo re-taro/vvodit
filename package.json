@@ -14,11 +14,13 @@
     "fmt": "pnpm lint:eslint --fix",
     "lint": "pnpm run /^lint:.*/",
     "lint:eslint": "eslint .",
-    "lint:tsc": "tsc"
+    "lint:tsc": "tsc",
+    "test": "vitest"
   },
   "devDependencies": {
     "@re-taro/eslint-config": "5.1.0",
     "eslint": "9.8.0",
-    "typescript": "5.5.4"
+    "typescript": "5.5.4",
+    "vitest": "2.0.5"
   }
 }
