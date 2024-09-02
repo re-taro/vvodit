@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4.1.7
+      - name: Setup | Node.js
+        uses: re-taro/actions/setup-node@v3.6.0
+        with:
+          node-version-file: .tool-versions
+      - name: Test | ESLint
+        run: pnpm lint:eslint
+  tsc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4.1.7
+      - name: Setup | Node.js
+        uses: re-taro/actions/setup-node@v3.6.0
+        with:
+          node-version-file: .tool-versions
+      - name: Test | TypeScript
+        run: pnpm lint:tsc
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4.1.7
+      - name: Setup | Node.js
+        uses: re-taro/actions/setup-node@v3.6.0
+        with:
+          node-version-file: .tool-versions
+      - name: Test | Unit test
+        run: pnpm test
