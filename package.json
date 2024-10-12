@@ -18,7 +18,7 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@re-taro/eslint-config": "5.2.0",
+    "@re-taro/eslint-config": "5.2.1",
     "eslint": "9.12.0",
     "typescript": "5.6.3",
     "vitest": "2.1.2"
