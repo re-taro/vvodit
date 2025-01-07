@@ -2,7 +2,7 @@
   "name": "vvodit",
   "type": "module",
   "version": "0.1.0",
-  "packageManager": "pnpm@9.15.2",
+  "packageManager": "pnpm@9.15.3",
   "author": "Rintaro Itokawa <me@re-taro.dev> (https://re-taro.dev)",
   "license": "MIT",
   "repository": {
